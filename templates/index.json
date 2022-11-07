@@ -24,8 +24,9 @@
         "template--16842793419046__4e0f4d57-4647-4d38-8b2b-b832ae65786b-16678082611e233d96-1": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1550.png",
             "heading": "Image slide",
-            "heading_size": "h1",
+            "heading_size": "h2",
             "subheading": "Tell your brand's story through images",
             "button_label": "Button label",
             "link": "",
