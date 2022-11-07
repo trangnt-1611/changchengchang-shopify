@@ -57,7 +57,7 @@
     "9273abf4-7608-4284-9458-187d680e7202": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"slider fade\">\n  <div>\n    <div class=\"image\">\n      <img src=\"http:\/\/kenwheeler.github.io\/slick\/img\/fonz1.png\"\/>\n    <\/div>\n  <\/div>\n  <div>\n    <div class=\"image\">\n      <img src=\"http:\/\/kenwheeler.github.io\/slick\/img\/fonz2.png\"\/>\n    <\/div>\n  <\/div>  <div>\n    <div class=\"image\">\n      <img src=\"http:\/\/kenwheeler.github.io\/slick\/img\/fonz3.png\"\/>\n    <\/div>\n  <\/div>\n<\/div>\n\n<script>\n$('.slider').slick({\n  dots: true,\n  autoplay: true,\n  autoplaySpeed: 1000,\n  infinite: true,\n  speed: 500,\n  slide: 'div',\n  cssEase: 'linear'\n});\n<\/script>",
+        "custom_liquid": "<div class=\"custom-slider fade\">\n  <div>\n    <div class=\"image\">\n      <img src=\"http:\/\/kenwheeler.github.io\/slick\/img\/fonz1.png\"\/>\n    <\/div>\n  <\/div>\n  <div>\n    <div class=\"image\">\n      <img src=\"http:\/\/kenwheeler.github.io\/slick\/img\/fonz2.png\"\/>\n    <\/div>\n  <\/div>  <div>\n    <div class=\"image\">\n      <img src=\"http:\/\/kenwheeler.github.io\/slick\/img\/fonz3.png\"\/>\n    <\/div>\n  <\/div>\n<\/div>\n\n<script>\n$('.custom-slider').slick({\n  dots: true,\n  autoplay: true,\n  autoplaySpeed: 1000,\n  infinite: true,\n  speed: 500,\n  slide: 'div',\n  cssEase: 'linear'\n});\n<\/script>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
