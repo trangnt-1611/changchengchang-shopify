@@ -66,12 +66,12 @@
     "37e3eb15-0774-4b9c-a590-84ea96626749": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection",
+        "title": "Summer Collection",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "",
+        "collection": "summer-collection",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
