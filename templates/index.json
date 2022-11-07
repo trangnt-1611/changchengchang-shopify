@@ -54,6 +54,15 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "9273abf4-7608-4284-9458-187d680e7202": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"custom-slides\">\n<div class=\"slide-item\">\n  <img class=\"mySlides\" src=\"https:\/\/www.w3schools.com\/w3css\/img_snowtops.jpg\">\n<\/div>\n<div class=\"slide-item\">\n  <img class=\"mySlides\" src=\"https:\/\/www.w3schools.com\/w3css\/img_lights.jpg\">\n<\/div>\n<\/div>\n<script>$('custom-slides').slick({\n  dots: true,\n  infinite: true,\n  speed: 300,\n  slidesToShow: 1,\n  adaptiveHeight: true\n});\n\t<\/script>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -219,6 +228,7 @@
   },
   "order": [
     "4e0f4d57-4647-4d38-8b2b-b832ae65786b",
+    "9273abf4-7608-4284-9458-187d680e7202",
     "rich_text",
     "featured_collection",
     "collage",
