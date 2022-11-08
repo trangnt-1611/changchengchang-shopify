@@ -2,7 +2,8 @@ var products_on_page = $('.products-on-page');
 var next_url = products_on_page.data('next-url');
 var load_more_btn = $('.load-more__btn');
 var load_more_spinner = $('.load-more__spinner');
-
+var isPreviousEventComplete = true
+var isDataAvailable = true;
 function loadMoreProducts() {  
   $.ajax({
     url: next_url,
@@ -25,7 +26,8 @@ function loadMoreProducts() {
 }
 
 $(window).scroll(function() {
-  if ($(window).scrollTop() >= (($(document).height() - $(window).height()) - $('#product-grid').innerHeight())) {
-    console.log('div reached');
-  }
+   if($(window).scrollTop() >= $('.products-on-page').offset().top + $('.products-on-page').outerHeight() - window.innerHeight) {
+        console.log('end reached');
+    }
+   // if (isPreviousEventComplete && isDataAvailable) {)
 });
