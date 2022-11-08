@@ -2997,3 +2997,8 @@ details-disclosure > details {
 .header__heading span {
   background-color: aqua;
 }
+
+.load-more {
+  text-align: center;
+  margin-top: 45px;
+}
