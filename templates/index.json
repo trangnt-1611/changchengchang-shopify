@@ -90,6 +90,33 @@
         "padding_bottom": 36
       }
     },
+    "fdafbe2f-04cb-48a8-9b6a-bdaa1acea9f1": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Winter collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "winter-collection",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -174,6 +201,7 @@
     "4e0f4d57-4647-4d38-8b2b-b832ae65786b",
     "9273abf4-7608-4284-9458-187d680e7202",
     "37e3eb15-0774-4b9c-a590-84ea96626749",
+    "fdafbe2f-04cb-48a8-9b6a-bdaa1acea9f1",
     "featured_collection",
     "collage",
     "video"
