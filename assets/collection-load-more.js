@@ -23,3 +23,9 @@ function loadMoreProducts() {
     products_on_page.append(new_products.html());
   });
 }
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() >= (($(document).height() - $(window).height()) - $('#product-grid').innerHeight())) {
+    console.log('div reached');
+  }
+});
