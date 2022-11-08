@@ -1,6 +1,7 @@
 var products_on_page = $('.products-on-page');
 var next_url = products_on_page.data('next_url');
 
+function loadMoreProducts() {  
 $.ajax({
   url: next_url,
   type: 'GET',
@@ -11,3 +12,4 @@ $.ajax({
   next_url = new_url;
   products_on_page.append(new_products.html());
 });
+}
