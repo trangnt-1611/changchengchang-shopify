@@ -202,7 +202,7 @@
                       </label>
                       <quantity-input class="quantity">
                         <button class="quantity__button no-js-hidden" name="minus" type="button">
-                          <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
+                          <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }} - {{ item.collection}}</span>
                           {% render 'icon-minus' %}
                         </button>
                         <input class="quantity__input"
