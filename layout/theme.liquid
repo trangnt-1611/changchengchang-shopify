@@ -244,8 +244,11 @@
     {% if template contains 'collection' %}
     <script src="{{ 'collection-load-more.js' | asset_url }}" defer="defer"></script>
     {% endif %}
-    <script>console.log('customize theme work');</script>
-  </head>
+    {% if template contains 'cart' %}
+    <script>console.log('this is page cart')</script>
+    {% endif %}
+  {{ 'gang-custom-js-shopify--main.js' | asset_url | script_tag }}
+</head>
 
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
