@@ -260,7 +260,12 @@
     {%- endif -%}
 
     {% section 'announcement-bar' %}
-    {% section 'custom-header' %}
+
+    {% if template contains 'cart'  %}
+       {% section 'header' %}
+    {% else %}
+       {% section 'custom-header' %}
+    {%- endif -%}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
