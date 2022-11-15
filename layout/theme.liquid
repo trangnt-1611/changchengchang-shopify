@@ -262,9 +262,9 @@
     {% section 'announcement-bar' %}
 
     {% if template contains 'cart'  %}
-       {% section 'header' %}
-    {% else %}
        {% section 'custom-header' %}
+    {% else %}
+       {% section 'header' %}
     {%- endif -%}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
