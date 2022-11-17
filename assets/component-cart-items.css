@@ -218,7 +218,7 @@ cart-remove-button .icon-remove {
 .product-option * {
   display: inline;
   margin: 0;
-  font-family: 'Noto Sans JP';
+  font-family: var(--font-family-base);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
