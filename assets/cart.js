@@ -36,13 +36,13 @@ class CartItems extends HTMLElement {
       {
         id: 'main-cart-items',
         section: document.getElementById('main-cart-items').dataset.id,
-        selector: '.js-contents',
+        selector: '.sum-price-per-collection',
       },
-      {
-        id: 'cart-icon-bubble',
-        section: 'cart-icon-bubble',
-        selector: '.shopify-section'
-      },
+      // {
+      //   id: 'cart-icon-bubble',
+      //   section: 'cart-icon-bubble',
+      //   selector: '.shopify-section'
+      // },
       {
         id: 'cart-live-region-text',
         section: 'cart-live-region-text',

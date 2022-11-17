@@ -1997,7 +1997,6 @@ input[type='checkbox'] {
   width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
   display: flex;
   border-radius: var(--inputs-radius);
-  min-height: calc((var(--inputs-border-width) * 2) + 4.5rem);
 }
 
 .quantity:after {
@@ -2010,8 +2009,8 @@ input[type='checkbox'] {
   left: var(--inputs-border-width);
   border: 0.1rem solid transparent;
   border-radius: var(--inputs-radius);
-  box-shadow: 0 0 0 var(--inputs-border-width)
-    rgba(var(--color-foreground), var(--inputs-border-opacity));
+  /* box-shadow: 0 0 0 var(--inputs-border-width)
+    rgba(var(--color-foreground), var(--inputs-border-opacity)); */
   transition: box-shadow var(--duration-short) ease;
   z-index: 1;
 }
@@ -2034,7 +2033,7 @@ input[type='checkbox'] {
 
 .quantity__input {
   color: currentColor;
-  font-size: 1.4rem;
+  font-size: 16px;
   font-weight: 500;
   opacity: 0.85;
   text-align: center;
@@ -2045,14 +2044,21 @@ input[type='checkbox'] {
   flex-grow: 1;
   -webkit-appearance: none;
   appearance: none;
+  background-color: inherit;
+  border: 1px solid #d0d0d0;
+  margin: 0 8px 0 8px;
+  height: 30px;
+  border-radius: 4px;
+  max-width: 50px;
 }
 
 .quantity__button {
-  width: calc(4.5rem / var(--font-body-scale));
+  width: 30px;
+  height: 30px;
   flex-shrink: 0;
   font-size: 1.8rem;
   border: 0;
-  background-color: transparent;
+  background: #d0d0d0;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -2086,10 +2092,13 @@ input[type='checkbox'] {
   z-index: 2;
 }
 
-.quantity__button:not(:focus-visible):not(.focused),
+.quantity__button:not(:focus-visible):not(.focused) {
+  background-color: #d0d0d0;
+  box-shadow: inherit;
+}
+
 .quantity__input:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
-  background-color: inherit;
 }
 
 .quantity__input:-webkit-autofill,
@@ -3016,6 +3025,10 @@ details-disclosure > details {
 }
 
 @keyframes spin {
-  0% {transform:rotate(0deg)}
-  100% {transform:rotate(360deg)}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

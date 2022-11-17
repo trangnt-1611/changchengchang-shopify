@@ -1,6 +1,6 @@
 .totals {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-end;
 }
 
@@ -21,8 +21,21 @@
   margin-left: 2rem;
 }
 
+.totals__subtotal {
+  font-family: var(--font-family-base);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
 .totals__subtotal-value {
-  font-size: 1.8rem;
+  font-family: var(--font-family-base);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(var(--color-base-text));
 }
 
 .cart__ctas + .totals {
