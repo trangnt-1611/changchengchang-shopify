@@ -5,7 +5,7 @@
     "gradient_accent_1": "",
     "colors_accent_2": "#334fb4",
     "gradient_accent_2": "",
-    "colors_text": "#121212",
+    "colors_text": "#1b1b1b",
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
@@ -126,8 +126,7 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "settings": {
-        }
+        "settings": {}
       },
       "header": {
         "type": "header",
@@ -204,9 +203,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   },
   "presets": {
     "Default": {
@@ -215,7 +212,7 @@
       "gradient_accent_1": "",
       "colors_accent_2": "#334fb4",
       "gradient_accent_2": "",
-      "colors_text": "#121212",
+      "colors_text": "#1b1b1b",
       "colors_outline_button_labels": "#121212",
       "colors_background_1": "#ffffff",
       "gradient_background_1": "",
@@ -348,8 +345,7 @@
           "block_order": [
             "announcement-bar-0"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "header": {
           "type": "header",

@@ -1,6 +1,6 @@
 .totals {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-end;
 }
 
@@ -23,6 +23,12 @@
 
 .totals__subtotal-value {
   font-size: 1.8rem;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(var(--color-base-text));
 }
 
 .cart__ctas + .totals {
