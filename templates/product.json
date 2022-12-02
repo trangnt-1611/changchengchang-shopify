@@ -37,6 +37,13 @@
             "custom_liquid": "Max product can buy:"
           }
         },
+        "b3c987ae-2986-4707-b338-0057a9ef4ada": {
+          "type": "text",
+          "settings": {
+            "text": "Max item can buy: {{ product.metafields.custom.max_item_can_buy.value }}",
+            "text_style": "body"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -98,6 +105,7 @@
         "variant_picker",
         "quantity_selector",
         "da78a450-bddd-493f-80b3-f6f0385daf06",
+        "b3c987ae-2986-4707-b338-0057a9ef4ada",
         "buy_buttons",
         "description",
         "collapsible-row-0",
