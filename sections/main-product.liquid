@@ -330,7 +330,9 @@
                   <h2 class="h1">
                     {{ product.title | escape }}
                   </h2>
+          
                 </a>
+             <div>Max item can buy:  {{ product.metafields.custom.max_item_can_buy }}</div>
               </div>
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
