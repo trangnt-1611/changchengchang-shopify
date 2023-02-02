@@ -429,7 +429,9 @@
     "checkout": {
       "general": {
         "page_title": "Checkout Page Title Custom",
-        "back_to_cart": "Return to cart custom"
+        "back_to_cart": "Return to cart custom",
+        "cart": "Cart Custom Title",
+        "continue_to_shipping_method": "Continue to shipping method custom"
       }
     }
   }
