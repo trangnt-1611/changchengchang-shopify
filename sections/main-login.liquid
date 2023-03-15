@@ -160,7 +160,11 @@
     </div>
   {%- endif -%}
 </div>
-            <script>console.log(document.getElementById('MOmyHeader'));</script>
+            <script>
+              window.onload = function() {
+              console.log(document.getElementById('MOmyHeader'));
+              }
+            </script>
 
 {% schema %}
 {
