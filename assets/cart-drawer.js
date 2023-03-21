@@ -5,6 +5,7 @@ class CartDrawer extends HTMLElement {
     this.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
     this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
     this.setHeaderCartIconAccessibility();
+    console.log('get cart data');
       $.getJSON('/cart.js', {
       _: new Date().getTime(),
     }, function (cart) {
