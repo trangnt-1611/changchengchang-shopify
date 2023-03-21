@@ -10,8 +10,14 @@ class CartNotification extends HTMLElement {
     this.querySelectorAll('button[type="button"]').forEach((closeButton) =>
       closeButton.addEventListener('click', this.close.bind(this))
     );
+    
      console.log('get cart data');
-      $.getJSON('/cart.js', {
+     window.addEventListener('pageshow', (event) => {
+    // Detect Backward/Forward Cache alias BF cache
+    // Issue: https://community.shopify.com/c/shopify-design/cart-liquid-is-cached-when-hit-the-back-button/td-p/1100092
+    // https://stackoverflow.com/questions/43043113/how-to-force-reloading-a-page-when-using-browser-back-button
+    if ((event.persisted || window.performance && window.performance.navigation.type === 2)) {
+     $.getJSON('/cart.js', {
       _: new Date().getTime(),
     }, function (cart) {
         console.log('get data done');
@@ -22,6 +28,9 @@ class CartNotification extends HTMLElement {
         document.querySelector('.cart-count-bubble').style.display = 'none';
       }
     });
+    }
+  });
+      
   }
 
   open() {
