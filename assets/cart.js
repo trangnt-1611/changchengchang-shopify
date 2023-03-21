@@ -25,6 +25,17 @@ class CartItems extends HTMLElement {
     }, 300);
 
     this.addEventListener('change', this.debouncedOnChange.bind(this));
+     console.log('get cart data');
+      $.getJSON('/cart.js', {
+      _: new Date().getTime(),
+    }, function (cart) {
+      // Check items exist in cart or not exist
+      if (cart.item_count) {
+        document.querySelector('.cart-count-bubble').style.display = 'flex';
+      } else {
+        document.querySelector('.cart-count-bubble').style.display = 'none';
+      }
+    });
   }
 
   onChange(event) {
