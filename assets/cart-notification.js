@@ -10,6 +10,17 @@ class CartNotification extends HTMLElement {
     this.querySelectorAll('button[type="button"]').forEach((closeButton) =>
       closeButton.addEventListener('click', this.close.bind(this))
     );
+     console.log('get cart data');
+      $.getJSON('/cart.js', {
+      _: new Date().getTime(),
+    }, function (cart) {
+      // Check items exist in cart or not exist
+      if (cart.item_count) {
+        document.querySelector('.cart-count-bubble').style.display = 'flex';
+      } else {
+        document.querySelector('.cart-count-bubble').style.display = 'none';
+      }
+    });
   }
 
   open() {
