@@ -14,6 +14,7 @@ class CartNotification extends HTMLElement {
       $.getJSON('/cart.js', {
       _: new Date().getTime(),
     }, function (cart) {
+        console.log('get data done');
       // Check items exist in cart or not exist
       if (cart.item_count) {
         document.querySelector('.cart-count-bubble').style.display = 'flex';
