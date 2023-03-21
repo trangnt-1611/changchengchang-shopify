@@ -5,6 +5,16 @@ class CartDrawer extends HTMLElement {
     this.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
     this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
     this.setHeaderCartIconAccessibility();
+      $.getJSON('/cart.js', {
+      _: new Date().getTime(),
+    }, function (cart) {
+      // Check items exist in cart or not exist
+      if (cart.item_count) {
+        document.querySelector('.cart-count-bubble').style.display = 'flex';
+      } else {
+        document.querySelector('.cart-count-bubble').style.display = 'none';
+      }
+    });
   }
 
   setHeaderCartIconAccessibility() {
