@@ -318,7 +318,7 @@
 
         if ((pathname.startsWith('/products/') || pathname.startsWith('/cart')) && 'referrer' in document) {
           console.log('go back by document reffer');
-          window.location.replace(document.referrer);
+          window.location=document.referrer;
         }
 
         return window.history.back();
