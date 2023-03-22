@@ -12,24 +12,24 @@ class CartNotification extends HTMLElement {
     );
     
      console.log('get cart data');
-     window.addEventListener('pageshow', (event) => {
-    // Detect Backward/Forward Cache alias BF cache
-    // Issue: https://community.shopify.com/c/shopify-design/cart-liquid-is-cached-when-hit-the-back-button/td-p/1100092
-    // https://stackoverflow.com/questions/43043113/how-to-force-reloading-a-page-when-using-browser-back-button
-    // if ((event.persisted || window.performance && window.performance.navigation.type === 2)) {
-    //  $.getJSON('/cart.js', {
-    //   _: new Date().getTime(),
-    // }, function (cart) {
-    //     console.log('get data done');
-    //   // Check items exist in cart or not exist
-    //   if (cart.item_count) {
-    //     document.querySelector('.cart-count-bubble').style.display = 'flex';
-    //   } else {
-    //     document.querySelector('.cart-count-bubble').style.display = 'none';
-    //   }
-    // });
-    }
-  });
+  //    window.addEventListener('pageshow', (event) => {
+  //   // Detect Backward/Forward Cache alias BF cache
+  //   // Issue: https://community.shopify.com/c/shopify-design/cart-liquid-is-cached-when-hit-the-back-button/td-p/1100092
+  //   // https://stackoverflow.com/questions/43043113/how-to-force-reloading-a-page-when-using-browser-back-button
+  //   if ((event.persisted || window.performance && window.performance.navigation.type === 2)) {
+  //    $.getJSON('/cart.js', {
+  //     _: new Date().getTime(),
+  //   }, function (cart) {
+  //       console.log('get data done');
+  //     // Check items exist in cart or not exist
+  //     if (cart.item_count) {
+  //       document.querySelector('.cart-count-bubble').style.display = 'flex';
+  //     } else {
+  //       document.querySelector('.cart-count-bubble').style.display = 'none';
+  //     }
+  //   });
+  //   }
+  // });
       
   }
 
