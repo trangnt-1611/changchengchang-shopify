@@ -308,6 +308,20 @@
         pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
       }
+      
+      function handleGoBack() {
+        var pathname = window.location.pathname;
+        if (pathname.startsWith('/collections/')) {
+          window.location.href = '/';
+          return;
+        }
+
+        if ((pathname.startsWith('/products/') || pathname.startsWith('/cart')) && 'referrer' in document) {
+          window.location.href = document.referrer;
+        }
+
+        return window.history.back();
+      }
     </script>
 
     {%- if settings.predictive_search_enabled -%}
