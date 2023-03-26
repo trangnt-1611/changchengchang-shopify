@@ -212,10 +212,14 @@
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
       }
-
-      .preload {
-        display: none;
-      }
+      .preload { 
+         display: none;
+    width:100px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
 
       @media screen and (min-width: 750px) {
         body {
@@ -339,7 +343,7 @@
     // https://stackoverflow.com/questions/43043113/how-to-force-reloading-a-page-when-using-browser-back-button
     if ((event.persisted || window.performance && window.performance.navigation.type === 2)) {
         $('#MainContent').fadeOut(100);
-      // $(".preload").show();
+      $(".preload").show();
       $(".preload").fadeOut(500, function () {
         location.reload(true);
       });
