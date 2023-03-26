@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
-<META HTTP-EQUIV="Expires" CONTENT="-1">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
@@ -318,15 +316,16 @@
           return;
         }
 
-        if ((pathname.startsWith('/products/') || pathname.startsWith('/cart')) && 'referrer' in document) {
-          console.log('go back by document reffer', document.referrer);
-           window.location.href = document.referrer.replace(location.origin , '');
-          // window.location.href = '/';
-          return;
-        }
+        // if ((pathname.startsWith('/products/') || pathname.startsWith('/cart')) && 'referrer' in document) {
+        //   console.log('go back by document reffer', document.referrer);
+        //    window.location.href = document.referrer.replace(location.origin , '');
+        //   // window.location.href = '/';
+        //   return;
+        // }
 
         return window.history.back();
       }
+      window.onbeforeunload = () => { document.body.opacity = 0; }
     </script>
 
     {%- if settings.predictive_search_enabled -%}
