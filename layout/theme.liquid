@@ -270,6 +270,9 @@
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
+    <div class="preload">
+<img src="http://i.imgur.com/KUJoe.gif">
+</div>
 
     {% if template contains 'cart'  %}
     {% else %}
@@ -331,9 +334,11 @@
     // Issue: https://community.shopify.com/c/shopify-design/cart-liquid-is-cached-when-hit-the-back-button/td-p/1100092
     // https://stackoverflow.com/questions/43043113/how-to-force-reloading-a-page-when-using-browser-back-button
     if ((event.persisted || window.performance && window.performance.navigation.type === 2)) {
-        $('body').fadeOut(100, function(){
-            location.reload(true);
-        });    
+        $('body').fadeOut(100);
+      // $(".preload").show();
+      $(".preload").fadeOut(500, function () {
+        location.reload(true);
+      });
     }
   });
     </script>
