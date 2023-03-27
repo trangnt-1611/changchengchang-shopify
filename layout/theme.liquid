@@ -327,19 +327,21 @@
 
         return window.history.back();
       }
-      window.addEventListener('pageshow', (event) => {
-        console.log('page-show');
-    // Detect Backward/Forward Cache alias BF cache
-    // Issue: https://community.shopify.com/c/shopify-design/cart-liquid-is-cached-when-hit-the-back-button/td-p/1100092
-    // https://stackoverflow.com/questions/43043113/how-to-force-reloading-a-page-when-using-browser-back-button
-    if ((event.persisted || window.performance && window.performance.navigation.type === 2)) {
-        $('#MainContent').fadeOut(100);
-      $(".preload").show();
-      $(".preload").fadeOut(500, function () {
-        location.reload(true);
-      });
-    }
-  });
+  //     window.addEventListener('pageshow', (event) => {
+  //       console.log('page-show');
+  //   // Detect Backward/Forward Cache alias BF cache
+  //   // Issue: https://community.shopify.com/c/shopify-design/cart-liquid-is-cached-when-hit-the-back-button/td-p/1100092
+  //   // https://stackoverflow.com/questions/43043113/how-to-force-reloading-a-page-when-using-browser-back-button
+  //   if ((event.persisted || window.performance && window.performance.navigation.type === 2)) {
+  //       $('#MainContent').fadeOut(100);
+  //     $(".preload").show();
+  //     $(".preload").fadeOut(500, function () {
+  //       location.reload(true);
+  //     });
+  //   }
+  // });
+      window.onbeforeunload = function () { }
+
     </script>
 
     {%- if settings.predictive_search_enabled -%}
